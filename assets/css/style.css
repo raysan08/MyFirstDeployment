@@ -1,0 +1,145 @@
+:root {
+    --theme-primary: #fff;
+    --theme-secondary: #000;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b3557;
+}
+
+button, button:focus, .btn, .btn:focus {
+    outline: 0;
+}
+
+section {
+    overflow: hidden;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.text-theme {
+    color: var(--theme-primary);
+}
+
+.btn-theme {
+    background-color: var(--theme-primary);
+    border-color: var(--theme-primary);
+    color: white;
+    font-weight: 600;
+}
+
+.btn-theme:hover {
+    background-color: var(--theme-secondary);
+    border-color: var(--theme-secondary);
+    color: white;
+    box-shadow: 0 0 8px -2px rgb(217 113 46 / 50%);
+}
+
+.btn-theme:focus {
+    box-shadow: 0 0 0 0.25rem rgb(245 131 30 / 25%);
+}
+
+.main_nav {
+    border-bottom: 2px solid #5599ff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background: #1b3557;
+}
+
+.main_nav .navbar-brand img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.main_nav .navbar-brand h6 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn_contact {
+    color: #9adbd9;
+    border: 2px solid #9adbd9;
+    border-radius: 25px;
+    padding: 10px 50px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.btn_contact:hover {
+    background: #9adbd9;
+    color: #fff;
+}
+
+.generator{
+    background-image:linear-gradient(45deg,#000000c9,#000c),url(../images/gen_bg.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 0px;
+}
+
+.generator h2 {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 600;
+    position: relative;
+}
+
+.generator h2:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 240px;
+    height: 4px;
+    background: #9cdcda;
+    border-radius: 5px;
+    transform: translateX(-50%);
+}
+
+.generator form .form-group .text-box {
+    border: 2px solid #9cdcda;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.generator form .form-group .text-box #change_text {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.generator form {
+    background: #00000070;
+    border-radius: 10px;
+}
+
+.main_footer {
+    border-top: 2px solid #5599ff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1b3557;
+}
+
+.main_footer p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}
